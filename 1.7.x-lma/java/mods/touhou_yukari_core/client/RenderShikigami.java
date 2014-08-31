@@ -12,7 +12,7 @@ import mods.touhou_yukari_core.*;
 public class RenderShikigami extends RenderBiped {
 
     private static final ResourceLocation shikigamiTexture =
-    		new ResourceLocation("textures/entity/steve.png");
+    		new ResourceLocation(TouhouYukariCore.MODID,"textures/entity/ran.png");
     
 	private ModelShikigami modelArmorChestplate;
 	private ModelShikigami modelArmor;
