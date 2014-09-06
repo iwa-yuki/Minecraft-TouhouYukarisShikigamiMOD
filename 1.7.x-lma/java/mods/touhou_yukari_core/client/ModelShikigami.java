@@ -14,6 +14,22 @@ public class ModelShikigami extends ModelBiped {
     	this(par1, 0.0F, 64, 64);
     }
     
+    ModelRenderer rightear;
+    ModelRenderer leftear;
+    ModelRenderer skirt1;
+    ModelRenderer skirt2;
+    ModelRenderer skirt3;
+    ModelRenderer chest;
+    ModelRenderer tail1;
+    ModelRenderer tail2;
+    ModelRenderer tail3;
+    ModelRenderer tail4;
+    ModelRenderer tail5;
+    ModelRenderer tail6;
+    ModelRenderer tail7;
+    ModelRenderer tail8;
+    ModelRenderer tail9;
+    
     public ModelShikigami(float par1, float par2, int par3, int par4)
     {
         this.textureWidth = par3;
@@ -27,13 +43,13 @@ public class ModelShikigami extends ModelBiped {
         this.bipedHeadwear.addBox(-3.0F, -6.0F, -3.0F, 6, 6, 6, par1 + 0.3F);
         this.bipedHeadwear.setRotationPoint(0.0F, 6.0F + par2, 0.0F);
         
-        ModelRenderer rightear = new ModelRenderer(this, 48, 0);
+        rightear = new ModelRenderer(this, 48, 0);
         rightear.addBox(-2F, -2F, -1F, 2, 2, 1);
         rightear.setRotationPoint(0F, -6F, 0F);
         setRotation(rightear, 0F, 0F, -0.7853982F);
         this.bipedHeadwear.addChild(rightear);
         
-        ModelRenderer leftear = new ModelRenderer(this, 48, 0);
+        leftear = new ModelRenderer(this, 48, 0);
         leftear.addBox(0F, 0F, -1F, 2, 2, 1);
         leftear.setRotationPoint(0F, -6F, 0F);
         setRotation(leftear, 0F, 0F, -0.7853982F);
@@ -43,79 +59,79 @@ public class ModelShikigami extends ModelBiped {
         this.bipedBody.addBox(-3.0F, 0.0F, -1.5F, 6, 8, 3, par1);
         this.bipedBody.setRotationPoint(0.0F, 6.0F + par2, 0.0F);
         
-        ModelRenderer skirt1 = new ModelRenderer(this, 0, 29);
+        skirt1 = new ModelRenderer(this, 0, 29);
         skirt1.addBox(-3F, 0F, -2F, 6, 1, 4);
         skirt1.setRotationPoint(0F, 6F, 0F);
         setRotation(skirt1, 0F, 0F, 0F);
         this.bipedBody.addChild(skirt1);
         
-        ModelRenderer skirt2 = new ModelRenderer(this, 0, 34);
+        skirt2 = new ModelRenderer(this, 0, 34);
         skirt2.addBox(-4F, 0F, -3F, 8, 3, 6);
         skirt2.setRotationPoint(0F, 7F, 0F);
         setRotation(skirt2, 0F, 0F, 0F);
         this.bipedBody.addChild(skirt2);
         
-        ModelRenderer skirt3 = new ModelRenderer(this, 0, 43);
+        skirt3 = new ModelRenderer(this, 0, 43);
         skirt3.addBox(-5F, 0F, -4F, 10, 5, 8);
         skirt3.setRotationPoint(0F, 10F, 0F);
         setRotation(skirt3, 0F, 0F, 0F);
         this.bipedBody.addChild(skirt3);
         
-        ModelRenderer chest = new ModelRenderer(this, 0, 24);
+        chest = new ModelRenderer(this, 0, 24);
         chest.addBox(-3F, 1.2F, -1F, 6, 3, 2);
         chest.setRotationPoint(0F, 0F, 0F);
         setRotation(chest, -0.4F, 0F, 0F);
         this.bipedBody.addChild(chest);
         
-        ModelRenderer tail1 = new ModelRenderer(this, 38, 12);
+        tail1 = new ModelRenderer(this, 38, 12);
         tail1.addBox(-1.5F, 0F, -1.5F, 3, 8, 3);
         tail1.setRotationPoint(0F, 6F, 2F);
         setRotation(tail1, 0.4833219F, 0F, -0.4363323F);
         this.bipedBody.addChild(tail1);
         
-        ModelRenderer tail2 = new ModelRenderer(this, 38, 12);
+        tail2 = new ModelRenderer(this, 38, 12);
         tail2.addBox(-1.5F, 0F, -1.5F, 3, 8, 3);
         tail2.setRotationPoint(0F, 6F, 2F);
         setRotation(tail2, 0.4833219F, 0F, 2.617994F);
         this.bipedBody.addChild(tail2);
         
-        ModelRenderer tail3 = new ModelRenderer(this, 38, 12);
+        tail3 = new ModelRenderer(this, 38, 12);
         tail3.addBox(-1.5F, 0F, -1.5F, 3, 8, 3);
         tail3.setRotationPoint(0F, 6F, 1F);
         setRotation(tail3, 0.4833219F, 0F, 1.745329F);
         this.bipedBody.addChild(tail3);
         
-        ModelRenderer tail4 = new ModelRenderer(this, 38, 12);
+        tail4 = new ModelRenderer(this, 38, 12);
         tail4.addBox(-1.5F, 0F, -1.5F, 3, 8, 3);
         tail4.setRotationPoint(0F, 6F, 2F);
         setRotation(tail4, 0.4833219F, 0F, -2.617994F);
         this.bipedBody.addChild(tail4);
         
-        ModelRenderer tail5 = new ModelRenderer(this, 38, 12);
+        tail5 = new ModelRenderer(this, 38, 12);
         tail5.addBox(-1.5F, 0F, -1.5F, 3, 8, 3);
         tail5.setRotationPoint(0F, 6F, 2F);
         setRotation(tail5, 0.4833219F, 0F, -1.745329F);
         this.bipedBody.addChild(tail5);
         
-        ModelRenderer tail6 = new ModelRenderer(this, 38, 12);
+        tail6 = new ModelRenderer(this, 38, 12);
         tail6.addBox(-1.5F, 0F, -1.5F, 3, 8, 3);
         tail6.setRotationPoint(0F, 6F, 2F);
         setRotation(tail6, 0.8179294F, 0F, 0.9599311F);
         this.bipedBody.addChild(tail6);
         
-        ModelRenderer tail7 = new ModelRenderer(this, 38, 12);
+        tail7 = new ModelRenderer(this, 38, 12);
         tail7.addBox(-1.5F, 0F, -1.5F, 3, 8, 3);
         tail7.setRotationPoint(0F, 6F, 2F);
         setRotation(tail7, 0.9294653F, 0F, 3.141593F);
         this.bipedBody.addChild(tail7);
         
-        ModelRenderer tail8 = new ModelRenderer(this, 38, 12);
+        tail8 = new ModelRenderer(this, 38, 12);
         tail8.addBox(-1.5F, 0F, -1.5F, 3, 8, 3);
         tail8.setRotationPoint(0F, 6F, 2F);
         setRotation(tail8, 0.8179294F, 0F, -0.9599311F);
         this.bipedBody.addChild(tail8);
         
-        ModelRenderer tail9 = new ModelRenderer(this, 38, 12);
+        tail9 = new ModelRenderer(this, 38, 12);
         tail9.addBox(-1.5F, 0F, -1.5F, 3, 8, 3);
         tail9.setRotationPoint(0F, 6F, 2F);
         setRotation(tail9, 0.4833219F, 0F, 0.4363323F);
@@ -173,6 +189,12 @@ public class ModelShikigami extends ModelBiped {
         this.bipedRightLeg.rotateAngleY = 0.0F;
         this.bipedLeftLeg.rotateAngleY = 0.0F;
 
+        this.skirt1.rotateAngleX = 0.0F;
+        this.skirt2.rotateAngleX = 0.0F;
+        this.skirt3.rotateAngleX = 0.0F;
+        this.skirt3.rotationPointY = 9.0F;
+        this.skirt3.rotationPointZ = 0.0F;
+        
         if (this.isRiding)
         {
             this.bipedRightArm.rotateAngleX += -((float)Math.PI / 5F);
@@ -181,6 +203,12 @@ public class ModelShikigami extends ModelBiped {
             this.bipedLeftLeg.rotateAngleX = -((float)Math.PI * 2F / 5F);
             this.bipedRightLeg.rotateAngleY = ((float)Math.PI / 10F);
             this.bipedLeftLeg.rotateAngleY = -((float)Math.PI / 10F);
+            
+            this.skirt1.rotateAngleX = -((float)Math.PI * 0.25F / 5F);
+            this.skirt2.rotateAngleX = -((float)Math.PI * 0.5F / 5F);
+            this.skirt3.rotateAngleX = -((float)Math.PI * 1F / 5F);
+            this.skirt3.rotationPointY = 8.5F;
+            this.skirt3.rotationPointZ = -1F;
         }
 
         if (this.heldItemLeft != 0)
@@ -227,10 +255,12 @@ public class ModelShikigami extends ModelBiped {
             this.bipedLeftArm.rotateAngleX += 0.4F;
             this.bipedRightLeg.rotationPointZ = 4.0F;
             this.bipedLeftLeg.rotationPointZ = 4.0F;
-            this.bipedRightLeg.rotationPointY = 9.0F;
-            this.bipedLeftLeg.rotationPointY = 9.0F;
-            this.bipedHead.rotationPointY = 1.0F;
-            this.bipedHeadwear.rotationPointY = 1.0F;
+            this.bipedRightLeg.rotationPointY = 15.0F;
+            this.bipedLeftLeg.rotationPointY = 15.0F;
+            this.bipedHead.rotationPointY = 6.0F;
+            this.bipedHeadwear.rotationPointY = 6.0F;
+
+            this.skirt3.rotateAngleX -= 0.4F;
         }
         else
         {
@@ -247,6 +277,16 @@ public class ModelShikigami extends ModelBiped {
         this.bipedLeftArm.rotateAngleZ -= MathHelper.cos(par3 * 0.09F) * 0.05F + 0.05F;
         this.bipedRightArm.rotateAngleX += MathHelper.sin(par3 * 0.067F) * 0.05F;
         this.bipedLeftArm.rotateAngleX -= MathHelper.sin(par3 * 0.067F) * 0.05F;
+        
+        this.tail1.rotateAngleX = 0.4833219F + MathHelper.cos(par3 * 0.09F) * 0.03F;
+        this.tail2.rotateAngleX = 0.4833219F + MathHelper.cos(par3 * 0.09F) * 0.03F;
+        this.tail3.rotateAngleX = 0.4833219F + MathHelper.cos(par3 * 0.09F) * 0.03F;
+        this.tail4.rotateAngleX = 0.4833219F + MathHelper.cos(par3 * 0.09F) * 0.03F;
+        this.tail5.rotateAngleX = 0.4833219F + MathHelper.cos(par3 * 0.09F) * 0.03F;
+        this.tail6.rotateAngleX = 0.8179294F + MathHelper.cos(par3 * 0.09F) * 0.04F;
+        this.tail7.rotateAngleX = 0.9294653F + MathHelper.cos(par3 * 0.09F) * 0.05F;
+        this.tail8.rotateAngleX = 0.8179294F + MathHelper.cos(par3 * 0.09F) * 0.04F;
+        this.tail9.rotateAngleX = 0.4833219F + MathHelper.cos(par3 * 0.09F) * 0.03F;
 
         if (this.aimedBow)
         {
@@ -255,7 +295,7 @@ public class ModelShikigami extends ModelBiped {
             this.bipedRightArm.rotateAngleZ = 0.0F;
             this.bipedLeftArm.rotateAngleZ = 0.0F;
             this.bipedRightArm.rotateAngleY = -(0.1F - f6 * 0.6F) + this.bipedHead.rotateAngleY;
-            this.bipedLeftArm.rotateAngleY = 0.1F - f6 * 0.6F + this.bipedHead.rotateAngleY + 0.4F;
+            this.bipedLeftArm.rotateAngleY = 0.1F - f6 * 0.6F + this.bipedHead.rotateAngleY + 0.5F;
             this.bipedRightArm.rotateAngleX = -((float)Math.PI / 2F) + this.bipedHead.rotateAngleX;
             this.bipedLeftArm.rotateAngleX = -((float)Math.PI / 2F) + this.bipedHead.rotateAngleX;
             this.bipedRightArm.rotateAngleX -= f6 * 1.2F - f7 * 0.4F;
