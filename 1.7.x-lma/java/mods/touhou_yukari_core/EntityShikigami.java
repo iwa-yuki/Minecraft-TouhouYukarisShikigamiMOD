@@ -7,10 +7,13 @@ import net.minecraft.world.World;
 
 public class EntityShikigami extends EntityLiving{
 
+	EntityAIJavaScript aiScript;
+	
 	public EntityShikigami(World par1World) {
 		super(par1World);
-
-        this.tasks.addTask(0, new EntityAIJavaScript(this,new ResourceLocation("js", "test.js")));
+		
+		aiScript = new EntityAIJavaScript(this,new ResourceLocation("js", "test.js"));
+        this.tasks.addTask(0, aiScript);
 	}
 	
 	@Override
@@ -23,5 +26,15 @@ public class EntityShikigami extends EntityLiving{
     protected boolean canDespawn()
     {
 		return false;
+    }
+	
+	@Override
+    public void onLivingUpdate()
+    {
+		if(!aiScript.isEnable) {
+			this.setDead();
+		}
+		
+		super.onLivingUpdate();
     }
 }
